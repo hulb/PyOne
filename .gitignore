@@ -117,6 +117,5 @@ supervisord.conf
 .install
 *.log
 *.log*
-self_config.py
 nohup.out
 *favicon.ico
