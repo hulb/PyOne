@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    container_name: pyone
+    image: hulb/pyone:latest
+    ports:
+      - 127.0.0.1:34567:34567
+    links:
+      - redis:redis
+      - mongo:mongo
+  redis:
+    container_name: redis
+    image: redis:latest
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    volumes:
+      - /root/pyone/mongo:/data/db
