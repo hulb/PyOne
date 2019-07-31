@@ -34,7 +34,7 @@ theme="material"
 title_pre="index of "
 
 #onedrive api设置
-redirect_uri="https://pyoneauth.github.io/" #不要修改！
+redirect_uri="http://localhost:30662" #不要修改！
 BaseAuthUrl='https://login.microsoftonline.com'
 app_url=u'https://graph.microsoft.com/'
 
